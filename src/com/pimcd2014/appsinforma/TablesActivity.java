@@ -3,6 +3,8 @@ package com.pimcd2014.appsinforma;
 import java.util.Arrays;
 import java.util.Random;
 
+import com.pimcd2014.appsinforma.utilidades.UtilidadesCambioFont;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -51,6 +53,7 @@ public class TablesActivity extends Activity implements OnClickListener {
 		TituloApp = this.getResources().getString(R.string.app_name);
 		
 		externalFont = Typeface.createFromAsset(getAssets(), getResources().getString(R.string.externalFont));
+//		externalFont = Typeface.createFromAsset(getAssets(), "fonts/gloriahallelujah2.ttf");
 	    //"fonts/arial2.ttf");
 		  // "fonts/DroidSerif.ttf");
 		  // "fonts/gloriahallelujah2.ttf");
@@ -76,10 +79,26 @@ public class TablesActivity extends Activity implements OnClickListener {
 		//adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		mNum1.setAdapter(adapter1);
 		
+		initButtons();
+//ToDo: Parece que funciona la función de debajo sobre los Bottons:	
+//		UtilidadesCambioFont.overrideFonts(this, (View) this.getCurrentFocus(), externalFont);
 		initOnClick();
 		newExercise();
 	}
 	
+	// Poner la fuente externa a los botones.
+	private void initButtons(){
+		Button but;
+		int resid;
+		for (int i=0; i<=7; i++) {
+			for (int j=0; j<=7; j++) {
+				resid = this.getResources().getIdentifier("but_num" + i + j, "id", this.getPackageName());
+				but = (Button) findViewById(resid);
+				but.setTypeface(externalFont);
+			}
+		}
+	}
+
 	// Initializes OnClick events
 	private void initOnClick() {			
 		findViewById(R.id.but_newEx).setOnClickListener(this);

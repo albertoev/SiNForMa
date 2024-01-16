@@ -57,5 +57,23 @@ public class MySpinnerAdapter extends ArrayAdapter<String> {
         view.setTypeface(externalFont);
         return view;
     }
+  
+/*
+    private OnItemSelectedListener OnCatSpinnerCL = new AdapterView.OnItemSelectedListener() {
+        public void onItemSelected(AdapterView<?> parent, View view, int pos,
+                long id) {
+
+            ((TextView) parent.getChildAt(0)).setTextColor(Color.BLUE);
+            ((TextView) parent.getChildAt(0)).setTextSize(5);
+
+
+
+        }
+
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+    };
+*/
 }
 

@@ -202,6 +202,20 @@ public class MiNumero {
 		return miTabla;
 	}
 
+	/**
+	 * Función que traduce un número a formato Num o formato palabras.
+	 * @param i el número a traducir en base 10;
+	 * @param esNum indica si lo quiero en formato número o palabras
+	 * @return la representación de i en MiNúmero en formato número o palabra. 
+	 */
+	public static String numToTxt(int i, int radix, boolean esNum){
+		String strNum;
+		if (esNum) strNum = new MiNumero(i, radix).toString();
+		else strNum = new MiNumero(i, radix).toLongString();
+		
+		return strNum;
+	}
+
 	/*
 	 * Función que convierte un número en base 8 a base 10.
 	 */
@@ -237,10 +251,18 @@ public class MiNumero {
 		char[] strNumeroRepresentado;
 		String strElNumero = Integer.toString(elNumero);
 		int longElNumero = strElNumero.length();
+		int inicio = 0;
 		strNumeroRepresentado = new char[longElNumero];
 		int auxNumero = elNumero;
+		if (elNumero < 0) {
+			strNumeroRepresentado[0] = '-';
+			inicio = 1;
+			auxNumero = - elNumero;
+		}
 		int digito;
-		for (int i=longElNumero-1; i>=0; i--){
+		//System.out.println("ADiOS");
+		for (int i=longElNumero-1; i>=inicio; i--){
+			//System.out.println("Hola"+i);
 			digito = auxNumero % 10;
 			auxNumero = auxNumero / 10;
 			strNumeroRepresentado[i]= losDigitos[ digito ];
@@ -367,6 +389,7 @@ public class MiNumero {
 	 */
 
 	public static void main(String[] args) {
+		System.out.println("ȹ, ^, ɛ, ŧ, ƺ, ɷ, ʔ, ʪ");
 /*		String mio = "\u0239";
 		System.out.println("ȹ, ^, ɛ, ŧ, ƺ, ɷ, ʔ, ʪ");
 		System.out.print("a: "); System.out.println("\u2300");
@@ -398,11 +421,16 @@ public class MiNumero {
 		MiNumero elNumero3 = new MiNumero(elNum3);
 		System.out.println(elNum3 + " = " + elNumero3 + ". En guiri-guiri oral: " + elNumero3.toLongString());
 */
-		String elNum4 = "na";
+		int elNum3 = -17;
+		MiNumero elNumero3 = new MiNumero(elNum3);
+		System.out.println(elNum3 + " = " + elNumero3);
+		//System.out.println("En guiri-guiri oral: " + elNumero3.toLongString());
+
+/*		String elNum4 = "na";
 		MiNumero elNumero4 = new MiNumero(elNum4);
 		System.out.println(elNum4 + " = " + elNumero4 + ". En guiri-guiri oral: " + elNumero4.toLongString()
 				+ ". En base 8: " + elNumero4.elNumero);
-		
+*/		
 /*		int elNum5 = 10;
 		MiNumero elNumero5 = new MiNumero(elNum5, 10);
 		System.out.println("ElNumero: "+ elNumero5.elNumero);

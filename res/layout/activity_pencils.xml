@@ -108,12 +108,12 @@
         android:id="@+id/row7" >
         
         <Button
-            style="@style/BotonLapices2"
+            style="@style/BotonInferior"
             android:id="@+id/but_newEx"
             android:text="@string/newEx" />
 	    
 	    <Button
-            style="@style/BotonLapices2"
+            style="@style/BotonInferior"
             android:id="@+id/but_iscorrect"
             android:text="@string/isCorrect" />
         

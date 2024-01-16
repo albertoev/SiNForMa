@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wordsrr1aLinLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back3"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        style="@style/FilaInc"
+        android:id="@+id/row1" >
+         
+         <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtFromTo" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaInc"
+        android:id="@+id/row2" >
+       
+		<NumberPicker
+	        style="@style/NumPick"
+		    android:id="@+id/NumberPicker" />
+
+    </LinearLayout>
+    
+   <LinearLayout
+        style="@style/FilaInc"
+        android:id="@+id/row3" >
+         
+         <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtLastNum" />
+
+    </LinearLayout>
+    
+   <LinearLayout
+        style="@style/FilaInferiorInc"
+        android:id="@+id/row4">
+         
+         <Button
+             style="@style/BotonInferior"
+             android:id="@+id/but_newEx"
+             android:text="@string/newEx" />
+	    
+	    <Button
+            style="@style/BotonInferior"
+	        android:id="@+id/but_next"
+	        android:text="@string/nextEx" />
+
+    </LinearLayout>
+    
+</LinearLayout>

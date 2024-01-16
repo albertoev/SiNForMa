@@ -1,0 +1,218 @@
+package com.pimcd2014.appsinforma;
+
+import java.util.Random;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnFocusChangeListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.NumberPicker;
+import android.widget.TextView;
+
+public class WordsParamsActivity extends Activity implements OnClickListener, OnFocusChangeListener{
+	protected Typeface externalFont;
+	
+	// Todos los números están en base 10.
+	private int fromNum;
+	private int incr;
+	private boolean ascend;
+	
+	private int toNum;
+	private int curNum; //currentNum
+	private boolean isWord = true;
+	
+	private TextView tFromTo;
+	private EditText tWordNum;
+	private NumberPicker npNums;
+	private String[] str_npNums;
+	private TextView tLastNum;
+	private Button bNewEx;
+	private Button bNext;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		externalFont = Typeface.createFromAsset(getAssets(), getResources().getString(R.string.externalFont));
+		  // "fonts/DroidSerif.ttf");
+		  // "fonts/gloriahallelujah2.ttf");
+
+		tFromTo = (TextView) findViewById(R.id.txtFromTo);
+		tLastNum = (TextView) findViewById(R.id.txtLastNum);
+		bNewEx =  (Button) findViewById(R.id.but_newEx);
+		bNext =  (Button) findViewById(R.id.but_next);
+		if (isWord) tWordNum = (EditText) findViewById(R.id.txtWordNum);
+		else  npNums = (NumberPicker) findViewById(R.id.NumberPicker);
+				
+		readParameters();
+
+//		if (isWord) setContentView(R.layout.activity_words_params);
+	//	else setContentView(R.layout.activity_inc_params);
+
+		setTitle();
+		initOnClick();
+		try{
+		newExercise();
+		}
+		catch (Exception e){
+			System.out.println("pasooo");
+		}
+		
+	}
+	
+	// Reads the parameters
+	private void readParameters() {
+		Intent intent = getIntent(); // gets the previously created intent
+		fromNum = intent.getIntExtra("fromNumber", 1);
+		incr = intent.getIntExtra("increment", 1);
+		isWord = intent.getBooleanExtra("isWord", true);
+//		ascend = intent.getBooleanExtra("ascendent", true);
+	}
+
+	// Sets the title activity
+	private void setTitle() {
+		String sign = "+";
+		int titleID;
+		if (isWord) titleID = R.string.title_activity_words;
+		else titleID = R.string.title_activity_inc;
+		if (!ascend) sign = "-";
+		setTitle(String.format(this.getResources().getString(titleID), sign, incr));	
+	}
+	
+	// Initializes OnClick events
+	private void initOnClick() {
+		bNewEx.setOnClickListener(this);
+		bNext.setOnClickListener(this);
+		// tWordNum.setOnFocusChangeListener(this);
+		}
+	
+	@Override
+	public void onClick(View v) {
+		int butPressID = ((Button) v).getId();
+
+		switch (butPressID) {
+		case R.id.but_newEx:
+			newExercise();
+			break;
+		case R.id.but_next:
+			nextWordNumber();
+			break;
+		}
+	}
+	@Override
+	public void onFocusChange(View v, boolean hasFocus) {
+		EditText elText = (EditText) v;
+		if (hasFocus)
+		  elText.selectAll();
+		else 
+			elText.setText(this.getResources().getString(R.string.escribe_palabra));
+	}
+	
+	private void initNumberPicker(int howMany){
+		// Create the array of numbers that will populate the numberpicker
+		str_npNums = new String[howMany];
+		for(int i=0; i<str_npNums.length; i++) {
+		   str_npNums[i] = MiNumero.toString(fromNum + i*incr );
+		}
+		
+		npNums.setMaxValue(toNum);
+		npNums.setMinValue(fromNum);
+		npNums.setWrapSelectorWheel(false);
+		npNums.setDisplayedValues(str_npNums);
+
+	}
+	
+	// Creates a new exercise
+	private void newExercise(){
+		String formatoText = this.getResources().getString(R.string.escribe_palabras);
+		String formatoUlt = this.getResources().getString(R.string.ultima_palabra);
+		
+		bNewEx.setEnabled(false);
+		bNext.setEnabled(true);
+		
+		Random r = new Random();
+		int min = 5;
+		int max = 15;
+		// r.nextInt(max - min + 1) + min;
+		int howMany = r.nextInt(max - min + 1) + min;
+		
+		if (ascend) {
+			if (fromNum ==-1) fromNum = r.nextInt(512 - howMany*incr); //Math.pow(8,3)
+			curNum = fromNum; 
+			toNum = fromNum + howMany*incr;
+		} else {
+			if (fromNum == -1) fromNum = r.nextInt(512 - howMany*incr) + howMany*incr; //Math.pow(8,3)
+			curNum = fromNum; 
+			toNum = fromNum - howMany*incr;
+		}
+		
+		tFromTo.setText(String.format(formatoText, new MiNumero(fromNum), new MiNumero(toNum)));
+		tLastNum.setText(String.format(formatoUlt, new MiNumero(fromNum)));
+		
+		if (!isWord) initNumberPicker(howMany);
+	}
+	
+	private String leerTextoNum(){
+		String strText;
+		if (isWord) strText = tWordNum.getText().toString();
+		else strText = str_npNums[npNums.getValue()];
+		return strText;
+	}
+
+	// Checks if the word-number is correct or not and asks the next
+	private void nextWordNumber(){
+		String formatoUlt = this.getResources().getString(R.string.ultima_palabra);
+		// wordNum = Palabra tecleada por el usuario.
+		String wordNum = leerTextoNum();
+		MiNumero elNum = new MiNumero(curNum, 10);
+		String strElNum;
+
+		if (isWord) strElNum = elNum.toLongString();
+		else strElNum = elNum.toString();
+		
+		if (wordNum.equals(strElNum)) {
+			if (curNum == toNum) {
+				showMessage(this.getResources().getString(R.string.perfecto_Fin));
+				bNewEx.setEnabled(true);
+				bNext.setEnabled(false);
+			} else {
+				showMessage(this.getResources().getString(R.string.perfecto_Sig));
+				if (ascend) curNum = curNum + incr;
+				else curNum= curNum - incr;
+			}
+			tLastNum.setText(String.format(formatoUlt, MiNumero.toString(curNum)));
+		} else {
+			showMessage(this.getResources().getString(R.string.ooh_OtraVez));
+		};
+		if (isWord) tWordNum.setText("");
+	}
+	
+	// Shows a popup message with an Ok button
+	private void showMessage(CharSequence message) {
+		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+		// set dialog
+		alertDialogBuilder
+			.setTitle(this.getResources().getString(R.string.app_name))
+			.setMessage(message)
+			.setCancelable(false)
+			.setPositiveButton(this.getResources().getString(R.string.aceptar),new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog,int id) {
+					// if this button is clicked, close the dialog
+					dialog.cancel();
+				}
+			})
+		;
+		// create alert dialog
+		AlertDialog alertDialog = alertDialogBuilder.create();
+		// show it
+		alertDialog.show();
+	}
+
+}

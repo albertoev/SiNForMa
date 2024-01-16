@@ -1,0 +1,119 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=15904, tid=12560
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_51-b13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.51-b03 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002040800):  JavaThread "Unknown thread" [_thread_in_vm, id=12560, stack(0x0000000001f40000,0x0000000002040000)]
+
+Stack: [0x0000000001f40000,0x0000000002040000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002040800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=12560, stack(0x0000000001f40000,0x0000000002040000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.011 loading class 0x00000000020851c0 done
+Event: 0.012 loading class 0x0000000002084be0 done
+Event: 0.012 loading class 0x0000000002084bc0
+Event: 0.012 loading class 0x000000000208ccc0
+Event: 0.012 loading class 0x000000000208ccc0 done
+Event: 0.012 loading class 0x000000000208ccf0
+Event: 0.012 loading class 0x000000000208ccf0 done
+Event: 0.012 loading class 0x000000000208cd20
+Event: 0.012 loading class 0x000000000208cd20 done
+Event: 0.012 loading class 0x0000000002084bc0 done
+
+
+Dynamic libraries:
+0x00007ff772f00000 - 0x00007ff772f33000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x00007ffcbcb80000 - 0x00007ffcbcd26000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffcbc630000 - 0x00007ffcbc76a000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ffcba260000 - 0x00007ffcba36f000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ffcb8b30000 - 0x00007ffcb8bb8000 	C:\WINDOWS\system32\apphelp.dll
+0x00007ffcb61b0000 - 0x00007ffcb61ff000 	C:\WINDOWS\AppPatch\AppPatch64\AcGenral.DLL
+0x00007ffcbc770000 - 0x00007ffcbc817000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ffcb9ce0000 - 0x00007ffcb9d0b000 	C:\WINDOWS\SYSTEM32\SspiCli.dll
+0x00007ffcba5f0000 - 0x00007ffcba641000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x00007ffcba650000 - 0x00007ffcba7c1000 	C:\WINDOWS\system32\USER32.dll
+0x00007ffcbc960000 - 0x00007ffcbcad8000 	C:\WINDOWS\system32\ole32.dll
+0x00007ffcba7d0000 - 0x00007ffcbbbdf000 	C:\WINDOWS\system32\SHELL32.dll
+0x00007ffcb9510000 - 0x00007ffcb952e000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x00007ffcbbbf0000 - 0x00007ffcbbc95000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ffcb1000000 - 0x00007ffcb101b000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x00007ffcbc820000 - 0x00007ffcbc957000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ffcbbeb0000 - 0x00007ffcbbf07000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x00007ffcbbf70000 - 0x00007ffcbc146000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x00007ffcbbcb0000 - 0x00007ffcbbdf4000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ffcb9f00000 - 0x00007ffcb9f14000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007ffcb8800000 - 0x00007ffcb889f000 	C:\WINDOWS\SYSTEM32\SHCORE.dll
+0x00007ffcbc300000 - 0x00007ffcbc334000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007ffcbc1c0000 - 0x00007ffcbc2f9000 	C:\WINDOWS\system32\MSCTF.dll
+0x00007ffcb83d0000 - 0x00007ffcb862a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17031_none_6242a4b3ecbb55a1\COMCTL32.dll
+0x0000000063890000 - 0x0000000063962000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x00000000620c0000 - 0x0000000062889000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x00007ffcb88f0000 - 0x00007ffcb88f9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffcb5bb0000 - 0x00007ffcb5bcf000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffcbc1b0000 - 0x00007ffcbc1b7000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ffcbbf10000 - 0x00007ffcbbf68000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ffcb5160000 - 0x00007ffcb518a000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffcbbca0000 - 0x00007ffcbbca9000 	C:\WINDOWS\system32\NSI.dll
+0x00007ffcba370000 - 0x00007ffcba3ba000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x00007ffcb8d90000 - 0x00007ffcb8db6000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x0000000063880000 - 0x000000006388f000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x0000000063850000 - 0x0000000063878000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000061ff0000 - 0x0000000062005000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=utf8 -Xbootclasspath:C:\android\adt-bundle-windows-x86_64-20140702\sdk\platforms\android-19\android.jar 
+java_command: com.pimcd2014.appsinforma.MiNumero
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;;C:\PROGRAM FILES (X86)\INTEL\ICLS CLIENT\;C:\PROGRAM FILES\INTEL\ICLS CLIENT\;C:\WINDOWS\SYSTEM32;C:\WINDOWS;C:\WINDOWS\SYSTEM32\WBEM;C:\WINDOWS\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X86;C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X64;C:\PROGRAM FILES\SONY\VAIO IMPROVEMENT;C:\PROGRAM FILES (X86)\SONY\VAIO BIOS DATA TRANSFER UTILITY\;C:\PROGRAM FILES (X86)\SONY\VAIO STARTUP SETTING TOOL;;C:\WINDOWS\SYSTEM32;C:\WINDOWS;C:\WINDOWS\SYSTEM32\WBEM;C:\WINDOWS\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES\MIKTEX 2.9\MIKTEX\BIN\X64\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\TortoiseSVN\bin;C:\Anaconda;C:\Anaconda\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\
+USERNAME=Alberto
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 8264500k(3910536k free), swap 13949828k(5520420k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.51-b03) for windows-amd64 JRE (1.7.0_51-b13), built on Dec 18 2013 18:40:56 by "java_re" with unknown MS VC++:1600
+
+time: Sat Nov 08 20:15:34 2014
+elapsed time: 0 seconds
+

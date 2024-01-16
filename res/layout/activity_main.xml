@@ -38,8 +38,8 @@
         android:id="@+id/row4" >
         <Button
        		style="@style/BotonMain"
-            android:id="@+id/butGame4"
-            android:text="@string/title_juego4" />
+            android:id="@+id/butInc"
+            android:text="@string/title_activity_nums" />
     </LinearLayout>
     
 </LinearLayout>

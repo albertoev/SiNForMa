@@ -392,12 +392,12 @@
 	        android:prompt="@string/spinner_prompt" />
 	 
 	    <Button
-            style="@style/BotonInferior"
+            style="@style/BotonInferiorSmall"
             android:id="@+id/but_newEx"
             android:text="@string/newEx" />
 	    
 	    <Button
-            style="@style/BotonInferior"
+            style="@style/BotonInferiorSmall"
             android:id="@+id/but_iscorrect"
             android:text="@string/isCorrect" />
         
