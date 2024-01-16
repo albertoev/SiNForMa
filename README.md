@@ -2,4 +2,4 @@
 Android APP for students to learnt the dificulties to teach a numerical system.
 
 ## Bibliografía
-https://ieeexplore.ieee.org/document/9282919/footnotes#footnotes
+https://ieeexplore.ieee.org/document/9282919/
