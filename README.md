@@ -1,2 +1,3 @@
 # SiNForMa
-Android APP for students to learnt the difuculties to teach a numerical system
+Android APP for students to learnt the dificulties to teach a numerical system.
+
