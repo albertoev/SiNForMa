@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wordsrr1aLinLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back3"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+         <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtFromTo" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+       
+         <EditText
+        	 style="@style/EditText"
+             android:id="@+id/txtWordNum"
+             android:text="@string/escribe_palabra" >
+         </EditText>
+
+    </LinearLayout>
+    
+   <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+         <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtLastNum" />
+
+    </LinearLayout>
+    
+   <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+         <Button
+             style="@style/BotonInferior"
+             android:id="@+id/but_newEx"
+             android:text="@string/newEx" />
+	    
+	    <Button
+            style="@style/BotonInferior"
+	        android:id="@+id/but_next"
+	        android:text="@string/nextEx" />
+
+    </LinearLayout>
+    
+</LinearLayout>

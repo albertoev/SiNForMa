@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wordsLinLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back3"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+        <Button
+            android:id="@+id/butWords1"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_1_r_1"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+        
+       <Button
+            android:id="@+id/butWords2"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_1_r_2"
+            android:textSize="14sp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+       <Button
+            android:id="@+id/butWords3"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_0_r_2"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+        <Button
+            android:id="@+id/butWords4"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_0_r_4"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+        <Button
+            android:id="@+id/butWords5"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_0_r_8"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+        <Button
+            android:id="@+id/butWords6"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_r_r_1_a"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+        <Button
+            android:id="@+id/butWords7"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_r_r_1_d"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+        <Button
+            android:id="@+id/butWords8"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_r_r_2"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+        <Button
+            android:id="@+id/butWords9"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_r_r_4"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/row10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" >
+         
+        <Button
+            android:id="@+id/butWords10"
+            android:textColor="#071700"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/title_activity_words_r_r_8"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+</LinearLayout>

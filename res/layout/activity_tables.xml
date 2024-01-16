@@ -1,0 +1,405 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tablesLinLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back3"
+    android:orientation="vertical">
+ 
+    <LinearLayout
+        style="@style/FilaTablas"
+        android:id="@+id/row1" >
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num00"
+            android:text="@string/num00" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num01"
+            android:text="@string/num01" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num02"
+            android:text="@string/num02" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num03"
+            android:text="@string/num03" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num04"
+            android:text="@string/num04" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num05"
+            android:text="@string/num05" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num06"
+            android:text="@string/num06" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num07"
+            android:text="@string/num07" />
+    </LinearLayout>
+  
+    <LinearLayout
+        style="@style/FilaTablas"
+        android:id="@+id/row2" >
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num10"
+            android:text="@string/num10" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num11"
+            android:text="@string/num11" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num12"
+            android:text="@string/num12" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num13"
+            android:text="@string/num13" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num14"
+            android:text="@string/num14" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num15"
+            android:text="@string/num15" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num16"
+            android:text="@string/num16" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num17"
+            android:text="@string/num17" />
+
+    </LinearLayout>
+ 
+    <LinearLayout
+        style="@style/FilaTablas"
+        android:id="@+id/row3" >
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num20"
+            android:text="@string/num20" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num21"
+            android:text="@string/num21" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num22"
+            android:text="@string/num22" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num23"
+            android:text="@string/num23" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num24"
+            android:text="@string/num24" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num25"
+            android:text="@string/num25" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num26"
+            android:text="@string/num26" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num27"
+            android:text="@string/num27" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FilaTablas"
+        android:id="@+id/row4" >
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num30"
+            android:text="@string/num30" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num31"
+            android:text="@string/num31" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num32"
+            android:text="@string/num32" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num33"
+            android:text="@string/num33" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num34"
+            android:text="@string/num34" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num35"
+            android:text="@string/num35" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num36"
+            android:text="@string/num36" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num37"
+            android:text="@string/num37" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaTablas"
+        android:id="@+id/row5" >
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num40"
+            android:text="@string/num40" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num41"
+            android:text="@string/num41" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num42"
+            android:text="@string/num42" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num43"
+            android:text="@string/num43" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num44"
+            android:text="@string/num44" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num45"
+            android:text="@string/num45" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num46"
+            android:text="@string/num46" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num47"
+            android:text="@string/num47" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaTablas"
+        android:id="@+id/row6" >
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num50"
+            android:text="@string/num50" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num51"
+            android:text="@string/num51" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num52"
+            android:text="@string/num52" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num53"
+            android:text="@string/num53" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num54"
+            android:text="@string/num54" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num55"
+            android:text="@string/num55" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num56"
+            android:text="@string/num56" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num57"
+            android:text="@string/num57" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaTablas"
+        android:id="@+id/row7" >
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num60"
+            android:text="@string/num60" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num61"
+            android:text="@string/num61" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num62"
+            android:text="@string/num62" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num63"
+            android:text="@string/num63" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num64"
+            android:text="@string/num64" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num65"
+            android:text="@string/num65" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num66"
+            android:text="@string/num66" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num67"
+            android:text="@string/num67" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FilaTablas"
+        android:id="@+id/row8" >
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num70"
+            android:text="@string/num70" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num71"
+            android:text="@string/num71" />
+ 
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num72"
+            android:text="@string/num72" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num73"
+            android:text="@string/num73" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num74"
+            android:text="@string/num74" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num75"
+            android:text="@string/num75" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num76"
+            android:text="@string/num76" />
+        
+        <Button
+            style="@style/BotonTablas"
+            android:id="@+id/but_num77"
+            android:text="@string/num77" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FilaTablas"
+        android:id="@+id/row9"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <Spinner
+            style="@style/SpinnerTablas"
+            android:id="@+id/spinner1"
+            android:entries="@array/numCG_array"
+            android:prompt="@string/spinner_prompt" />
+ 
+	    <Spinner
+            style="@style/SpinnerTablas"
+	        android:id="@+id/spinner2"
+	        android:entries="@array/numCU_array"
+	        android:prompt="@string/spinner_prompt" />
+	 
+	    <Button
+            style="@style/BotonInferior"
+            android:id="@+id/but_newEx"
+            android:text="@string/newEx" />
+	    
+	    <Button
+            style="@style/BotonInferior"
+            android:id="@+id/but_iscorrect"
+            android:text="@string/isCorrect" />
+        
+    </LinearLayout>  
+ </LinearLayout>
