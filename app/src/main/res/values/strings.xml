@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="externalFont">fonts/arial2.ttf</string>
+    
+    <string name="app_name">AppSiNForMa</string>
+    <string name="title_activity_tables">Tables Activity</string>
+    <string name="title_activity_pencils">Pencils Activity</string>
+    <string name="title_activity_words">Words Activity</string>
+    <string name="title_activity_nums">Numbers Activity</string>
+    <string name="title2_activity_words">Words Activity %1$s %2$s</string>
+    <string name="title2_activity_nums">Numbers Activity %1$s %2$s</string>
+    
+    <string name="str_activity_words">Words %1$s-%2$s-%3$s %4$s</string>
+    <string name="title_activity_words_1_r_1">Words ro-?-ro</string>
+    <string name="title_activity_words_1_r_2">Words ro-?-mes</string>
+    <string name="title_activity_words_0_r_2">Words na-?-mes</string>
+    <string name="title_activity_words_0_r_4">Words na-?-cleta</string>
+    <string name="title_activity_words_0_r_8">Words na-?-moel</string>
+    <string name="title_activity_words_r_r_1_a">Words ?-?-ro Asc</string>
+    <string name="title_activity_words_r_r_1_d">Words ?-?-ro Desc</string>
+    <string name="title_activity_words_r_r_2">Words ?-?-mes</string>
+    <string name="title_activity_words_r_r_4">Words ?-?-cleta</string>
+    <string name="title_activity_words_r_r_8">Words ?-?-moel</string>
+    <string name="escribe_palabras">Write the words from %1$s to %2$s.</string>
+    <string name="ultima_palabra">Last word: %1$s</string>
+    <string name="escribe_palabra">Write the word.</string>
+    
+    <string name="Padd1">+^ pencil</string>
+    <string name="Padd8">+^ box</string>
+    <string name="Padd64">+^ case</string>
+    <string name="Pdel1">-^ pencil</string>
+    <string name="Pdel8">-^ box</string>
+    <string name="Pdel64">-^ case</string>
+    <string name="mensaje_pencils">%1$s pencils.</string>
+    <string name="lapiz">pencil</string>
+    <string name="estuche">box</string>
+    <string name="caja">case</string>
+    
+    <string name="str_activity_nums">Numbers %1$s-%2$s-%3$s %4$s</string>
+    <string name="title_activity_inc_1_r_1">Numbers ^-?-^</string>
+    <string name="title_activity_inc_1_r_2">Numbers ^-?-ɛ</string>
+    <string name="title_activity_inc_0_r_2">Numbers ȹ-?-ɛ</string>
+    <string name="title_activity_inc_0_r_4">Numbers ȹ-?-ƺ</string>
+    <string name="title_activity_inc_0_r_8">Numbers ȹ-?-^ȹ</string>
+    <string name="title_activity_inc_r_r_1_a">Numbers ?-?-^ Asc</string>
+    <string name="title_activity_inc_r_r_1_d">Numbers ?-?-^ Desc</string>
+    <string name="title_activity_inc_r_r_2">Numbers ?-?-ɛ</string>
+    <string name="title_activity_inc_r_r_4">Numbers ?-?-ƺ</string>
+    <string name="title_activity_inc_r_r_8">Numbers ?-?-^ȹ</string>
+    <string name="escribe_numeros">Numbers from %1$s to %2$s.</string>
+    <string name="ultimo_numero">Last Number: %1$s</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="spinner_prompt">Number</string>
+    <string name="isCorrect">Validate</string>
+    <string name="newEx">New</string>
+    <string name="nextEx">Next</string>
+    <string name="ooh_OtraVez">Try it again! :-(</string>
+    <string name="perfecto_Fin">Perfect! Finished! :-)</string>
+    <string name="perfecto_Sig">Perfect! One more.</string>
+    
+    <string-array name="num_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="numCU_array">
+        <item>ȹ</item>
+        <item>^</item>
+        <item>ɛ</item>
+        <item>ŧ</item>
+        <item>ƺ</item>
+        <item>ɷ</item>
+        <item>ʔ</item>
+        <item>ʪ</item>
+    </string-array>
+    <string-array name="numCG_array">
+        <item></item>
+        <item>^</item>
+        <item>ɛ</item>
+        <item>ŧ</item>
+        <item>ƺ</item>
+        <item>ɷ</item>
+        <item>ʔ</item>
+        <item>ʪ</item>
+    </string-array>
+    
+    <string name="num00">ȹ</string>
+    <string name="num01">^</string>
+    <string name="num02">ɛ</string>
+    <string name="num03">ŧ</string>
+    <string name="num04">ƺ</string>
+    <string name="num05">ɷ</string>
+    <string name="num06">ʔ</string>
+    <string name="num07">ʪ</string>
+    <string name="num10">^ȹ</string>
+    <string name="num11">^^</string>
+    <string name="num12">^ɛ</string>
+    <string name="num13">^ŧ</string>
+    <string name="num14">^ƺ</string>
+    <string name="num15">^ɷ</string>
+    <string name="num16">^ʔ</string>
+    <string name="num17">^ʪ</string>
+    <string name="num20">ɛȹ</string>
+    <string name="num21">ɛ^</string>
+    <string name="num22">ɛɛ</string>
+    <string name="num23">ɛŧ</string>
+    <string name="num24">ɛƺ</string>
+    <string name="num25">ɛɷ</string>
+    <string name="num26">ɛʔ</string>
+    <string name="num27">ɛʪ</string>
+    <string name="num30">ŧȹ</string>
+    <string name="num31">ŧ^</string>
+    <string name="num32">ŧɛ</string>
+    <string name="num33">ŧŧ</string>
+    <string name="num34">ŧƺ</string>
+    <string name="num35">ŧɷ</string>
+    <string name="num36">ŧʔ</string>
+    <string name="num37">ŧʪ</string>
+    <string name="num40">ƺȹ</string>
+    <string name="num41">ƺ^</string>
+    <string name="num42">ƺɛ</string>
+    <string name="num43">ƺŧ</string>
+    <string name="num44">ƺƺ</string>
+    <string name="num45">ƺɷ</string>
+    <string name="num46">ƺʔ</string>
+    <string name="num47">ƺʪ</string>
+    <string name="num50">ɷȹ</string>
+    <string name="num51">ɷ^</string>
+    <string name="num52">ɷɛ</string>
+    <string name="num53">ɷŧ</string>
+    <string name="num54">ɷƺ</string>
+    <string name="num55">ɷɷ</string>
+    <string name="num56">ɷʔ</string>
+    <string name="num57">ɷʪ</string>
+    <string name="num60">ʔȹ</string>
+    <string name="num61">ʔ^</string>
+    <string name="num62">ʔɛ</string>
+    <string name="num63">ʔŧ</string>
+    <string name="num64">ʔƺ</string>
+    <string name="num65">ʔɷ</string>
+    <string name="num66">ʔʔ</string>
+    <string name="num67">ʔʪ</string>
+    <string name="num70">ʪȹ</string>
+    <string name="num71">ʪ^</string>
+    <string name="num72">ʪɛ</string>
+    <string name="num73">ʪŧ</string>
+    <string name="num74">ʪƺ</string>
+    <string name="num75">ʪɷ</string>
+    <string name="num76">ʪʔ</string>
+    <string name="num77">ʪʪ</string>
+    
+    <string name="aceptar">Accept</string>
+    <string name="perfecto">Perfect!</string>
+    <string name="ayuda">\?</string>
+    
+    <string name="title_difficulty_levels">Levels</string>
+    <string name="str_easy">Easy</string>
+    <string name="str_hard">Hard</string>
+    <string name="str_medium">Medium</string>
+
+</resources>
+

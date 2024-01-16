@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wordsrr1aLinLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back3"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        style="@style/FilaMain"
+        android:id="@+id/row1" >
+         
+         <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtFromTo" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaMain"
+        android:id="@+id/row2" >
+       
+         <EditText
+        	 style="@style/EditText"
+             android:id="@+id/txtWordNum"
+             android:text="@string/escribe_palabra" >
+         </EditText>
+
+    </LinearLayout>
+    
+   <LinearLayout
+        style="@style/FilaMain"
+        android:id="@+id/row3" >
+         
+         <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtLastNum" />
+
+    </LinearLayout>
+    
+   <LinearLayout
+        style="@style/FilaMain"
+        android:id="@+id/row4">
+         
+         <Button
+             style="@style/BotonInferior"
+             android:id="@+id/but_newEx"
+             android:text="@string/newEx" />
+	    
+	    <Button
+            style="@style/BotonInferior"
+	        android:id="@+id/but_next"
+	        android:text="@string/nextEx" />
+
+    </LinearLayout>
+    
+</LinearLayout>
+<!-- From: file:/C:/Users/Alberto/StudioProjects/AppSiNForMa1/app/src/main/res/layout/activity_words_params.xml -->

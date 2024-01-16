@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back3"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+       	style="@style/FilaMain"
+        android:id="@+id/row1" >
+        <Button
+		    style="@style/BotonMain"
+            android:id="@+id/butTables"
+            android:text="@string/title_activity_tables" />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaMain"
+        android:id="@+id/row2" >
+        <Button
+            style="@style/BotonMain"
+            android:id="@+id/butPencils"
+            android:text="@string/title_activity_pencils" />
+    </LinearLayout>
+    
+    <LinearLayout
+       	style="@style/FilaMain"
+        android:id="@+id/row3" >
+        <Button
+            style="@style/BotonMain"
+            android:id="@+id/butWords"
+            android:text="@string/title_activity_words" />
+    </LinearLayout>
+    
+    <LinearLayout
+       	style="@style/FilaMain"
+        android:id="@+id/row4" >
+        <Button
+       		style="@style/BotonMain"
+            android:id="@+id/butInc"
+            android:text="@string/title_activity_nums" />
+    </LinearLayout>
+    
+</LinearLayout><!-- From: file:/C:/Users/Alberto/StudioProjects/AppSiNForMa1/app/src/main/res/layout/activity_main.xml -->

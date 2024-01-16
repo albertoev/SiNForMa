@@ -1,0 +1,130 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="General">
+        <!--  item name="android:typeface">serif</item>-->      
+        <item name="android:textColor">#071700</item>
+        <item name="android:textSize">24sp</item>
+	</style>
+
+    <style name="GeneralSmall" parent="General">
+        <item name="android:textSize">18sp</item>
+	</style>
+
+    <style name="GeneralCentrado" parent="General">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.50</item>
+		<item name="android:gravity">center_horizontal|center_vertical</item> 
+	</style>
+
+    <style name="TextBig" parent="GeneralCentrado">
+		<item name="android:inputType">none</item>
+	</style>
+    
+    <style name="TextSmall" parent="TextBig">
+        <item name="android:textSize">18sp</item>
+	</style>
+    
+    <style name="EditText" parent="GeneralCentrado">
+		<item name="android:inputType">text</item>
+		<item name="android:background">#BFFFAE</item>
+	</style>
+    
+    <style name="ImagePencils" parent="General">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.50</item>
+	</style>
+    		
+	<style name="SpinnerTablas" parent="GeneralSmall">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.25</item>
+		<item name="android:gravity">center</item> 
+	</style>
+
+    <style name="FilaPencils" parent="General">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">.14</item>
+    </style>
+
+    <style name="FilaTablas" parent="GeneralSmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">.11</item>
+    </style>
+
+    <style name="BotonTablas" parent="GeneralSmall">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.12</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="BotonInferior" parent="General">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.25</item>
+    </style>
+
+    <style name="BotonInferiorSmall" parent="BotonInferior">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="BotonLapices" parent="GeneralSmall">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.16</item>
+  	</style>
+
+    <style name="BotonMain" parent="General">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+	</style>
+
+    <style name="BotonWords" parent="BotonMain">
+  	</style>
+        
+    <style name="BotonInc" parent="BotonMain">
+  	</style>
+        
+    <style name="FilaMain" parent="General">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">.20</item>
+  	</style>
+
+    <style name="FilaInc" parent="FilaMain">
+        <item name="android:layout_weight">.30</item>
+		<item name="android:gravity">center_horizontal|center_vertical</item> 
+    </style>
+ 
+    <style name="FilaInferiorInc" parent="FilaInc">
+        <item name="android:layout_weight">.15</item>
+  	</style>
+
+    <style name="NumPick" parent="General">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+ 		<item name="android:background">#BFFFAE</item>
+ 	</style>
+</resources>

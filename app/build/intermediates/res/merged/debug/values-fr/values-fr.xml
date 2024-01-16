@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Alberto/StudioProjects/AppSiNForMa1/app/src/main/res/values-fr/strings.xml -->
+    <eat-comment/>
+    <string-array name="numCG_array">
+        <item/>
+        <item>^</item>
+        <item>ɛ</item>
+        <item>ŧ</item>
+        <item>ƺ</item>
+        <item>ɷ</item>
+        <item>ʔ</item>
+        <item>ʪ</item>
+    </string-array>
+    <string-array name="numCU_array">
+        <item>ȹ</item>
+        <item>^</item>
+        <item>ɛ</item>
+        <item>ŧ</item>
+        <item>ƺ</item>
+        <item>ɷ</item>
+        <item>ʔ</item>
+        <item>ʪ</item>
+    </string-array>
+    <string-array name="num_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string name="Padd1">+^ crayon</string>
+    <string name="Padd64">+^ cas</string>
+    <string name="Padd8">+^ boîte</string>
+    <string name="Pdel1">-^ crayon</string>
+    <string name="Pdel64">-^ cas</string>
+    <string name="Pdel8">-^ boîte</string>
+    <!-- From: file:/C:/Users/Alberto/StudioProjects/AppSiNForMa1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-fr/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Revenir à l\'accueil"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Revenir en haut de la page"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Plus d\'options"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"OK"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Tout afficher"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Sélectionner une application"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Effacer la requête"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Requête de recherche"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Rechercher"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Envoyer la requête"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Recherche vocale"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partager avec"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partager avec %s"</string>
+    <!-- From: file:/C:/Users/Alberto/StudioProjects/AppSiNForMa1/app/src/main/res/values-fr/strings.xml -->
+    <eat-comment/>
+    <string name="aceptar">Accepter</string>
+    <string name="action_settings">Configuration</string>
+    <string name="app_name">AppSiNForMa</string>
+    <string name="ayuda">\?</string>
+    <string name="caja">boîte</string>
+    <string name="escribe_numeros">Noms de %1$s à %2$s.</string>
+    <string name="escribe_palabra">Ecrivez le mot.</string>
+    <string name="escribe_palabras">Ecrivez les mots de %1$s à %2$s.</string>
+    <string name="estuche">cas</string>
+    <string name="externalFont">fonts/arial2.ttf</string>
+    <string name="isCorrect">Valider</string>
+    <string name="lapiz">crayon</string>
+    <string name="mensaje_pencils">%1$s crayons.</string>
+    <string name="newEx">Nouveau</string>
+    <string name="nextEx">Suivant</string>
+    <string name="num00">ȹ</string>
+    <string name="num01">^</string>
+    <string name="num02">ɛ</string>
+    <string name="num03">ŧ</string>
+    <string name="num04">ƺ</string>
+    <string name="num05">ɷ</string>
+    <string name="num06">ʔ</string>
+    <string name="num07">ʪ</string>
+    <string name="num10">^ȹ</string>
+    <string name="num11">^^</string>
+    <string name="num12">^ɛ</string>
+    <string name="num13">^ŧ</string>
+    <string name="num14">^ƺ</string>
+    <string name="num15">^ɷ</string>
+    <string name="num16">^ʔ</string>
+    <string name="num17">^ʪ</string>
+    <string name="num20">ɛȹ</string>
+    <string name="num21">ɛ^</string>
+    <string name="num22">ɛɛ</string>
+    <string name="num23">ɛŧ</string>
+    <string name="num24">ɛƺ</string>
+    <string name="num25">ɛɷ</string>
+    <string name="num26">ɛʔ</string>
+    <string name="num27">ɛʪ</string>
+    <string name="num30">ŧȹ</string>
+    <string name="num31">ŧ^</string>
+    <string name="num32">ŧɛ</string>
+    <string name="num33">ŧŧ</string>
+    <string name="num34">ŧƺ</string>
+    <string name="num35">ŧɷ</string>
+    <string name="num36">ŧʔ</string>
+    <string name="num37">ŧʪ</string>
+    <string name="num40">ƺȹ</string>
+    <string name="num41">ƺ^</string>
+    <string name="num42">ƺɛ</string>
+    <string name="num43">ƺŧ</string>
+    <string name="num44">ƺƺ</string>
+    <string name="num45">ƺɷ</string>
+    <string name="num46">ƺʔ</string>
+    <string name="num47">ƺʪ</string>
+    <string name="num50">ɷȹ</string>
+    <string name="num51">ɷ^</string>
+    <string name="num52">ɷɛ</string>
+    <string name="num53">ɷŧ</string>
+    <string name="num54">ɷƺ</string>
+    <string name="num55">ɷɷ</string>
+    <string name="num56">ɷʔ</string>
+    <string name="num57">ɷʪ</string>
+    <string name="num60">ʔȹ</string>
+    <string name="num61">ʔ^</string>
+    <string name="num62">ʔɛ</string>
+    <string name="num63">ʔŧ</string>
+    <string name="num64">ʔƺ</string>
+    <string name="num65">ʔɷ</string>
+    <string name="num66">ʔʔ</string>
+    <string name="num67">ʔʪ</string>
+    <string name="num70">ʪȹ</string>
+    <string name="num71">ʪ^</string>
+    <string name="num72">ʪɛ</string>
+    <string name="num73">ʪŧ</string>
+    <string name="num74">ʪƺ</string>
+    <string name="num75">ʪɷ</string>
+    <string name="num76">ʪʔ</string>
+    <string name="num77">ʪʪ</string>
+    <string name="ooh_OtraVez">Essayer à nouveau! :-(</string>
+    <string name="perfecto">Parfait!</string>
+    <string name="perfecto_Fin">Parfait! Vous avez terminé! :-)</string>
+    <string name="perfecto_Sig">Parfait! Autre.</string>
+    <string name="spinner_prompt">Nom</string>
+    <string name="str_activity_nums">Noms %1$s-%2$s-%3$s  %4$s</string>
+    <string name="str_activity_words">Mots %1$s-%2$s-%3$s %4$s</string>
+    <string name="str_easy">Facile</string>
+    <string name="str_hard">Difficile</string>
+    <string name="str_medium">Moyen</string>
+    <string name="title2_activity_nums">Activité Noms %1$s %2$s</string>
+    <string name="title2_activity_words">Activité Mots %1$s %2$s</string>
+    <string name="title_activity_inc_0_r_2">Noms ȹ-?-ɛ</string>
+    <string name="title_activity_inc_0_r_4">Noms ȹ-?-ƺ</string>
+    <string name="title_activity_inc_0_r_8">Noms ȹ-?-^ȹ</string>
+    <string name="title_activity_inc_1_r_1">Noms ^-?-^</string>
+    <string name="title_activity_inc_1_r_2">Noms ^-?-ɛ</string>
+    <string name="title_activity_inc_r_r_1_a">Noms ?-?-^ asc</string>
+    <string name="title_activity_inc_r_r_1_d">Noms ?-?-^ desc</string>
+    <string name="title_activity_inc_r_r_2">Noms ?-?-ɛ</string>
+    <string name="title_activity_inc_r_r_4">Noms ?-?-ƺ</string>
+    <string name="title_activity_inc_r_r_8">Nombres ?-?-^ȹ</string>
+    <string name="title_activity_nums">Activité Nombres</string>
+    <string name="title_activity_pencils">Activité Crayons</string>
+    <string name="title_activity_tables">Activité Tables</string>
+    <string name="title_activity_words">Activité Mots</string>
+    <string name="title_activity_words_0_r_2">Mots na-?-mes</string>
+    <string name="title_activity_words_0_r_4">Mots na-?-cleta</string>
+    <string name="title_activity_words_0_r_8">Mots na-?-moel</string>
+    <string name="title_activity_words_1_r_1">Mots ro-?-ro</string>
+    <string name="title_activity_words_1_r_2">Mots ro-?-mes</string>
+    <string name="title_activity_words_r_r_1_a">Mots ?-?-ro asc</string>
+    <string name="title_activity_words_r_r_1_d">Mots ?-?-ro desc</string>
+    <string name="title_activity_words_r_r_2">Mots ?-?-mes</string>
+    <string name="title_activity_words_r_r_4">Mots ?-?-cleta</string>
+    <string name="title_activity_words_r_r_8">Mots ?-?-moel</string>
+    <string name="title_difficulty_levels">Niveaux de difficulté</string>
+    <string name="ultima_palabra">Dernier mot: %1$s</string>
+    <string name="ultimo_numero">Dernier Nom: %1$s</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/difficulty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/FilaMain"
+        android:id="@+id/row1" >
+        <Button
+            style="@style/BotonMain"
+            android:id="@+id/butEasy"
+            android:text="@string/str_easy" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FilaMain"
+        android:id="@+id/row2" >
+        <Button
+            style="@style/BotonMain"
+            android:id="@+id/butMedium"
+            android:text="@string/str_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FilaMain"
+        android:id="@+id/row3" >
+        <Button
+            style="@style/BotonMain"
+            android:id="@+id/butHard"
+            android:text="@string/str_hard" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Alberto/StudioProjects/AppSiNForMa1/app/src/main/res/layout/activity_difficulty_levels.xml -->

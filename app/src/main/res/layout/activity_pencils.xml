@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pencilsLinLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back3"
+    android:orientation="vertical">
+ 
+    <LinearLayout
+        style="@style/FilaPencils"
+        android:id="@+id/row1" >
+         
+        <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtRndNum" />
+                
+    </LinearLayout>
+
+<!---	Intentando hacer el compound drawable
+	<TextView 
+        style="@style/FilaPencils"
+        android:id="@+id/row2"
+        android:drawableRight="@drawable/pencil1" />
+-->
+    <LinearLayout
+        style="@style/FilaPencils"
+        android:id="@+id/row2" >
+       
+       <ImageView
+           style="@style/ImagePencils"
+           android:contentDescription = "@string/lapiz"
+           android:id="@+id/imgView1"
+           android:src="@drawable/pencil1" />
+       
+       <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtNumP1" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaPencils"
+        android:id="@+id/row3" >
+
+       <ImageView
+           style="@style/ImagePencils"
+           android:contentDescription = "@string/estuche"
+           android:id="@+id/imgView2"
+           android:src="@drawable/pencilcase8" />
+       
+       <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtNumP8" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaPencils"
+        android:id="@+id/row4" >
+       
+        <ImageView
+           style="@style/ImagePencils"
+           android:contentDescription = "@string/caja"
+           android:id="@+id/imgView3"
+           android:src="@drawable/pencilbox64" />
+       
+       <TextView
+        	style="@style/TextBig"
+            android:id="@+id/txtNumP64" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaPencils"
+        android:id="@+id/row5" >
+       
+        <Button
+            style="@style/BotonLapices"
+            android:id="@+id/butPadd1"
+            android:text="@string/Padd1" />
+        
+        <Button
+            style="@style/BotonLapices"
+            android:id="@+id/butPadd8"
+            android:text="@string/Padd8" />
+        
+        <Button
+            style="@style/BotonLapices"
+            android:id="@+id/butPadd64"
+            android:text="@string/Padd64" /> 
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaPencils"
+        android:id="@+id/row6" > 
+            
+        <Button
+            style="@style/BotonLapices"
+            android:id="@+id/butPdel1"
+            android:text="@string/Pdel1" />
+        
+        <Button
+            style="@style/BotonLapices"
+            android:id="@+id/butPdel8"
+            android:text="@string/Pdel8" />
+        
+        <Button
+            style="@style/BotonLapices"
+            android:id="@+id/butPdel64"
+            android:text="@string/Pdel64" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/FilaPencils"
+        android:id="@+id/row7" >
+        
+        <Button
+            style="@style/BotonInferior"
+            android:id="@+id/but_newEx"
+            android:text="@string/newEx" />
+	    
+	    <Button
+            style="@style/BotonInferior"
+            android:id="@+id/but_iscorrect"
+            android:text="@string/isCorrect" />
+        
+    </LinearLayout>
+    
+  </LinearLayout>
