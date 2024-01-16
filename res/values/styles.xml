@@ -125,7 +125,6 @@
     <style name="NumPick" parent="General">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:width">100dip</item>
  		<item name="android:background">#BFFFAE</item>
-    </style>
+ 	</style>
 </resources>

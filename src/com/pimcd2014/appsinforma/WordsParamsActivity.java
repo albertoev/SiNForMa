@@ -34,8 +34,9 @@ public class WordsParamsActivity extends Activity implements OnClickListener, On
 	
 	private TextView tFromTo;
 	private EditText tWordNum;
-	private NumberPicker npNums;
-	private String[] str_npNums;
+	private NumberPicker npNums3;
+	private NumberPicker npNums2;
+	private NumberPicker npNums1;
 	private TextView tLastNum;
 	private Button bNewEx;
 	private Button bNext;
@@ -54,7 +55,9 @@ public class WordsParamsActivity extends Activity implements OnClickListener, On
 		bNext =  (Button) findViewById(R.id.but_next);
 		if (isWord) tWordNum = (EditText) findViewById(R.id.txtWordNum);
 		else {
-			npNums = (NumberPicker) findViewById(R.id.NumberPicker);
+			npNums3 = (NumberPicker) findViewById(R.id.NumberPicker3);
+			npNums2 = (NumberPicker) findViewById(R.id.NumberPicker2);
+			npNums1 = (NumberPicker) findViewById(R.id.NumberPicker1);
 //			NumberPicker npNum = (NumberPicker) findViewById(R.id.NumberPicker);
 //			npNums = new MyNumberPicker(npNum.getContext());
 		}
@@ -62,7 +65,11 @@ public class WordsParamsActivity extends Activity implements OnClickListener, On
 		tFromTo.setTypeface(externalFont);
 		tLastNum.setTypeface(externalFont);
 		if (isWord) tWordNum.setTypeface(externalFont);
-		else UtilidadesCambioFont.setNumberPickerFont(npNums, externalFont);
+		else {
+			UtilidadesCambioFont.setNumberPickerFont(npNums3, externalFont);
+			UtilidadesCambioFont.setNumberPickerFont(npNums2, externalFont);
+			UtilidadesCambioFont.setNumberPickerFont(npNums1, externalFont);
+		}
 //		UtilidadesCambioFont.overrideFonts(this, (View) this.getCurrentFocus(), externalFont);
 		//else numberPickerCambiaFont();
 		//else ((EditText) npNums.getChildAt(1)).setTypeface(externalFont);
@@ -126,9 +133,46 @@ public class WordsParamsActivity extends Activity implements OnClickListener, On
 			elText.setText(this.getResources().getString(R.string.escribe_palabra));
 	}
 	
-	private void initNumberPicker(int howMany){
+	private void initNumberPickers(){
+		String[] str_npNums1 = new String[8];
+		String[] str_npNums2 = new String[9];
+		String[] str_npNums3 = new String[8];
+		
+		for(int i=0; i < 8; i++) {
+			   str_npNums1[i] = MiNumero.toString(i);
+			}
+		npNums1.setMinValue(0);
+		npNums1.setDisplayedValues(str_npNums1);
+		npNums1.setValue(0);
+		npNums1.setMaxValue(7);
+		npNums1.setWrapSelectorWheel(false);
+
+		for(int i=0; i <= 8; i++) {
+			   if (i == 0) str_npNums2[i] = " ";
+			   else str_npNums2[i] = MiNumero.toString(i-1);
+			}
+		npNums2.setMinValue(0);
+		npNums2.setDisplayedValues(str_npNums2);
+		npNums2.setValue(0);
+		npNums2.setMaxValue(8);
+		npNums2.setWrapSelectorWheel(false);
+
+		for(int i=0; i < 8; i++) {
+			   if (i == 0) str_npNums3[i] = " ";
+			   else str_npNums3[i] = MiNumero.toString(i);
+			}
+		npNums3.setMinValue(0);
+		npNums3.setDisplayedValues(str_npNums3);
+		npNums3.setValue(0);
+		npNums3.setMaxValue(7);
+		npNums3.setWrapSelectorWheel(false);
+
+		
+	}
+	
+/*	private void initNumberPicker(){
 		// Create the array of numbers that will populate the number picker
-		str_npNums = new String[toNum-fromNum+1];
+		str_npNums1 = new String[toNum-fromNum+1];
 		for(int i=0; i < toNum-fromNum+1; i++) {
 		   str_npNums[i] = MiNumero.toString(fromNum + i, 10 );
 		}
@@ -139,20 +183,18 @@ public class WordsParamsActivity extends Activity implements OnClickListener, On
 		npNums.setMaxValue(toNum-fromNum);
 		npNums.setWrapSelectorWheel(false);
 	}
-	
+*/	
 	private void setButtonsTxt(){
 		String formatoText;
 		String strFromNum;
 		String strToNum;
 		if (isWord){
 			formatoText = this.getResources().getString(R.string.escribe_palabras);
-			strFromNum = new MiNumero(fromNum,10).toString();
-			strToNum = new MiNumero(toNum,10).toString();
 		} else {
 			formatoText = this.getResources().getString(R.string.escribe_numeros);
-			strFromNum = new MiNumero(fromNum,10).toLongString();
-			strToNum = new MiNumero(toNum,10).toLongString();
 		}
+		strFromNum = MiNumero.numToTxt(fromNum, 10, isWord);
+		strToNum = MiNumero.numToTxt(toNum, 10, isWord);
 		tFromTo.setText(String.format(formatoText, strFromNum, strToNum));
 	//+"\nNumeros desde "+fromNum+" hasta "+toNum+"("+howMany+")-"+curNum);
 		setButtonInfTxt(fromNum);
@@ -163,11 +205,10 @@ public class WordsParamsActivity extends Activity implements OnClickListener, On
 		String strNum;
 		if (isWord){
 			formatoUlt = this.getResources().getString(R.string.ultima_palabra);
-			strNum = new MiNumero(num,10).toString();
 		} else {
 			formatoUlt = this.getResources().getString(R.string.ultimo_numero);
-			strNum = new MiNumero(num,10).toLongString();
 		}
+		strNum = MiNumero.numToTxt(num, 10, isWord);
 		tLastNum.setText(String.format(formatoUlt, strNum));
 		//+"\nNumero :"+curNum);
 	}
@@ -193,7 +234,7 @@ public class WordsParamsActivity extends Activity implements OnClickListener, On
 		}
 		
 		setButtonsTxt();
-		if (!isWord) initNumberPicker(howMany);
+		if (!isWord) initNumberPickers();
 	}
 	
 	/**
@@ -203,7 +244,14 @@ public class WordsParamsActivity extends Activity implements OnClickListener, On
 	private String leerTextoNum(){
 		String strText;
 		if (isWord) strText = tWordNum.getText().toString();
-		else strText = str_npNums[npNums.getValue()];
+		else {
+			int dig1 = npNums1.getValue();
+			int dig2 = npNums2.getValue()-1;
+			if (dig2 < 0)  dig2 = 0;
+			int dig3 = npNums3.getValue();
+			strText = MiNumero.toString( dig3*100 + dig2*10 + dig1 );
+		}
+		
 		return strText;
 	}
 
@@ -213,13 +261,7 @@ public class WordsParamsActivity extends Activity implements OnClickListener, On
 	 * @return devuelve el toLonString si isWord y el toString en caso contrario.
 	 */
 	private String elStrNum(int num){
-		MiNumero elNum = new MiNumero(num, 10);
-		String strElNum;
-
-		if (isWord) strElNum = elNum.toLongString();
-		else strElNum = elNum.toString();
-
-		return strElNum;
+		return MiNumero.numToTxt(num, 10, !isWord);
 	}
 
 	// Checks if the word-number is correct or not and asks the next

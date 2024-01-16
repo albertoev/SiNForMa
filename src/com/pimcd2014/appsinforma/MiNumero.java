@@ -150,9 +150,9 @@ public class MiNumero {
 		
 		// Decenas
 		miTabla.put(10, "moel");
-		miTabla.put(11, "ero");
-		miTabla.put(12, "zere");
-		miTabla.put(13, "blere");
+		miTabla.put(11, "romo");
+		miTabla.put(12, "memo");
+		miTabla.put(13, "cumo");
 		miTabla.put(14, "moelcleta");
 		miTabla.put(15, "moelprio");
 		miTabla.put(16, "moelburte");
@@ -167,13 +167,13 @@ public class MiNumero {
 		miTabla.put(26, "reteneburte");
 		miTabla.put(27, "retenebetu");
 		
-		miTabla.put(30, "cutane");
-		miTabla.put(31, "cutanero");
+		miTabla.put(30, "cutana");
+		miTabla.put(31, "cutanaro");
 
-		miTabla.put(40, "cletane");
-		miTabla.put(50, "pritane");
-		miTabla.put(60, "burtane");
-		miTabla.put(70, "betuane");
+		miTabla.put(40, "cletana");
+		miTabla.put(50, "pritana");
+		miTabla.put(60, "burtana");
+		miTabla.put(70, "betuana");
 		
 		// Centenas
 		miTabla.put(100, "molen");

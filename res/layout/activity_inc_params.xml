@@ -22,8 +22,14 @@
        
 		<NumberPicker
 	        style="@style/NumPick"
-		    android:id="@+id/NumberPicker" />
-
+		    android:id="@+id/NumberPicker3" />
+		<NumberPicker
+	        style="@style/NumPick"
+		    android:id="@+id/NumberPicker2" />
+				<NumberPicker
+	        style="@style/NumPick"
+		    android:id="@+id/NumberPicker1" />
+		
     </LinearLayout>
     
    <LinearLayout
